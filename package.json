@@ -1,0 +1,23 @@
+{
+  "name": "flashcard",
+  "version": "1.0.0",
+  "description": "Overview",
+  "main": "clozecard.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RubyDease/flashcard.git"
+  },
+  "author": "rdease",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RubyDease/flashcard/issues"
+  },
+  "homepage": "https://github.com/RubyDease/flashcard#readme",
+  "dependencies": {
+    "flashcards": "^1.12.0",
+    "inquirer": "^3.2.1"
+  }
+}

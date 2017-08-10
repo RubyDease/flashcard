@@ -2,7 +2,7 @@
 var inquirer = require('inquirer');
 
 // Import the flash cards constructor implementations
-var flashCard = require('./flashcardgen.js');
+var flashcards = require('./flashcardgen.js');
 // Import the full list of questions
 var clozeCard = require('./clozecard.js').clozeCard;
 
@@ -12,8 +12,8 @@ var closeQuestions = [];
 
 // Populate the cloze-deleted clozecard list
 for (var i = 0; i < clozeCard.length; i++) {
-    var q = flashCard.clozeCard(clozeCard[i].full, clozeCard[i].cloze)
-    closeQuestions.push(q)
+    var q = new flashCards.clozeCard(clozeCard[i].full, clozeCard[i].cloze);
+    closeQuestions.push(q);
 }
 
 // What question the user is currently on

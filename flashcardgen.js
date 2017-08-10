@@ -11,7 +11,7 @@ exports.ClozeCard = function(text, cloze) {
     var textToLower = text.toLowerCase();
     var clozeToLower = cloze.toLowerCase();
 
-    // Confirm that the cloze statement appears within the complete text
+    // Confirm that the cloze statement appears within the full text
     if (!textToLower.includes(clozeToLower)) {
         console.log('ERROR: cloze-deletion does not appear within full text -- <' + cloze + '>');
         return;
